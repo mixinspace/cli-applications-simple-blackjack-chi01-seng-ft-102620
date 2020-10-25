@@ -9,7 +9,14 @@ def deal_card
 end
 
 def display_card_total
-  puts "Your cards add up to #{card_total}"
+  if user_input == "h"
+    card_total += deal_card
+  elsif user_input == "s"
+     card_total
+   else
+     invalid_command
+     hit?(card_total)
+   end
   # code #display_card_total here
 end
 
