@@ -1,4 +1,5 @@
 def welcome
+  puts "HI!"
   # code #welcome here
 end
 
